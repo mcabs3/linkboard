@@ -46,6 +46,8 @@ export default function LinkBoard() {
             <li key={link.name} className="first-of-type:mt-0 mt-4">
               <Link
                 href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded flex gap-4 items-center px-8 py-4 transition-all hover:scale-105 text-accent-500 fill-accent-400 border-2 font-normal tracking-widest border-accent-500/80 bg-accent-500/5 hover:bg-primary-500/10 hover:text-primary-500/80 hover:border-primary-500/80 hover:fill-primary-500/80 dark:bg-gradient-to-br dark:hover:from-primary-500/10 dark:hover:to-secondary-500/10 dark:hover:text-white dark:hover:border-r-secondary-500/80 dark:hover:border-b-secondary-500/80 dark:hover:fill-white"
               >
                 {!!link.icon && <link.icon className="w-4 h-4 fill-inherit" />}
