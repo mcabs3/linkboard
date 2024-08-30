@@ -1,77 +1,41 @@
-import {
-  Twitter,
-  Github,
-  Linkedin,
-  EnvelopeFill,
-  Telegram,
-  Instagram,
-  Messenger,
-  Spotify,
-  Discord,
-  JournalAlbum,
-} from "react-bootstrap-icons";
+import { Github, Linkedin, Code, JournalAlbum, X } from "react-bootstrap-icons";
 
 const data: Data = {
-  title: "Frank's Linkboard",
-  theme: "default",
+  title: "Miguel Caballero - Web Developer",
+  theme: "dark",
   animation: {
     nameRandomizer: false,
   },
-  name: "Frank Borisjuk",
-  description: "Software Engineer",
+  name: "Miguel Caballero",
+  description: "Web Engineer @ McDonald's",
   links: [
     {
-      name: "Twitter",
-      url: "https://twitter.com/hangerthem",
-      icon: Twitter,
+      name: "miguel.cab",
+      url: "https://miguel.cab",
+      icon: Code,
     },
     {
-      name: "GitHub",
-      url: "https://github.com/hangerthem",
-      icon: Github,
+      name: "My Blog",
+      url: "https://miguel.cab/blog",
+      icon: JournalAlbum,
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/franti%C5%A1ek-borisjuk-022686225/",
+      url: "https://www.linkedin.com/in/miguel-caballero/",
       icon: Linkedin,
     },
     {
-      name: "Email",
-      url: "mailto:f.borisjuk@hangerthem.com",
-      icon: EnvelopeFill,
+      name: "GitHub",
+      url: "https://github.com/mcabs3",
+      icon: Github,
     },
     {
-      name: "Telegram",
-      url: "https://t.me/hangerthem",
-      icon: Telegram,
-    },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/ferda_borisjuk/",
-      icon: Instagram,
-    },
-    {
-      name: "Messenger",
-      url: "https://m.me/frant.borisjukovic",
-      icon: Messenger,
-    },
-    {
-      name: "Spotify",
-      url: "https://open.spotify.com/user/jiguc8apyguwslzwptmx0e4zn",
-      icon: Spotify,
-    },
-    {
-      name: "Discord",
-      url: "https://discord.com/users/495134242825699328",
-      icon: Discord,
-    },
-    {
-      name: "Blog",
-      url: "https://blog.hangerthem.com",
-      icon: JournalAlbum,
+      name: "Twitter",
+      url: "https://x.com/miguelcabs",
+      icon: X,
     },
   ],
-  sortByLength: true,
+  sortByLength: false,
 };
 
 export default data;

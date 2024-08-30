@@ -1,9 +1,108 @@
+@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=K2D&display=swap");
 
+@theme {
+  --width-vp-lg: 64rem; /* 1024px */
+  --width-vp-xxl: 90rem; /* 1440px */
+
+  --font-family-sans: "GeistSans";
+  --font-family-mono: "GeistMono";
+
+  --color-primary-50: #ffeee5;
+  --color-primary-100: #ffddcc;
+  --color-primary-200: #ffbb99;
+  --color-primary-300: #ff9966;
+  --color-primary-400: #ff7733;
+  --color-primary-500: #ff5500;
+  --color-primary-600: #cc4400;
+  --color-primary-700: #993300;
+  --color-primary-800: #662200;
+  --color-primary-900: #331100;
+  --color-primary-950: #1a0900;
+
+  --color-secondary-50: #fffae5;
+  --color-secondary-100: #fff5cc;
+  --color-secondary-200: #ffeb99;
+  --color-secondary-300: #ffe066;
+  --color-secondary-400: #ffd633;
+  --color-secondary-500: #ffcc00;
+  --color-secondary-600: #cca300;
+  --color-secondary-700: #997a00;
+  --color-secondary-800: #665200;
+  --color-secondary-900: #332900;
+  --color-secondary-950: #1a1400;
+
+  --color-accent-50: #f2f2f2;
+  --color-accent-100: #e6e6e6;
+  --color-accent-200: #cccccc;
+  --color-accent-300: #b3b3b3;
+  --color-accent-400: #999999;
+  --color-accent-500: #808080;
+  --color-accent-600: #666666;
+  --color-accent-700: #4d4d4d;
+  --color-accent-800: #333333;
+  --color-accent-900: #1a1a1a;
+  --color-accent-950: #0d0d0d;
+}
+
+::selection {
+  background-color: #47a3f3;
+  color: #fefefe;
+}
+
+:root {
+  --background: var(--color-accent-50);
+  --text-primary: var(--color-accent-950);
+  --text-secondary: var(--color-accent-700);
+
+  --link-primary: var(--color-primary-500);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-accent-950);
+    --text-primary: var(--color-accent-50);
+    --text-secondary: var(--color-accent-700);
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
+
+html {
+  min-width: 360px;
+  font-family: var(--font-family-sans);
+}
+
 body {
-  background-image: url("/background.webp");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--background);
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Remove Safari input shadow on mobile */
+input[type="text"],
+input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+table {
+  display: block;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.title {
+  text-wrap: balance;
 }

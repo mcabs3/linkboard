@@ -1,23 +1,13 @@
-import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
-import data from '@/config';
-import ThemeContext from '@/context/themeContext';
-import '@/styles/global.css';
-import '@/styles/normalize.css';
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import data from "@/config";
+import ThemeContext from "@/context/themeContext";
+import "@/styles/global.css";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
 export const metadata: Metadata = {
   title: data.title,
-  icons: ['/profile.png'],
-  description: 'A link board, like a bulletin board, but for links.',
-  authors: [
-    {
-      name: 'HangerThem',
-      url: 'https://hangerthem.com',
-    },
-  ],
-  keywords: ['link', 'board', 'linkboard', 'bulletin', 'bulletin'],
-  creator: 'HangerThem',
-  publisher: 'HangerThem',
 };
 
 export default function RootLayout({
@@ -26,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={GeistSans.variable}>
       <body>
         <ThemeContext>{children}</ThemeContext>
         <Analytics />
