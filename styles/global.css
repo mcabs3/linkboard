@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=K2D&display=swap");
 
 @theme {
+  --color-*: initial;
   --width-vp-lg: 64rem; /* 1024px */
   --width-vp-xxl: 90rem; /* 1440px */
 
   --font-family-sans: "GeistSans";
   --font-family-mono: "GeistMono";
 
+  --color-white: #fff;
+  --color-black: #000;
   --color-primary-50: #ffeee5;
   --color-primary-100: #ffddcc;
   --color-primary-200: #ffbb99;
@@ -51,7 +54,7 @@
 }
 
 :root {
-  --background: var(--color-accent-50);
+  --background: var(--color-accent-100);
   --text-primary: var(--color-accent-950);
   --text-secondary: var(--color-accent-700);
 
@@ -72,11 +75,12 @@
 
 html {
   min-width: 360px;
-  font-family: var(--font-family-sans);
 }
 
 body {
   background-color: var(--background);
+  font-family: var(--font-family-sans);
+  color: var(--text-primary);
 }
 
 pre::-webkit-scrollbar {
