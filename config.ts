@@ -7,7 +7,7 @@ const data: Data = {
     nameRandomizer: false,
   },
   name: "Miguel Caballero",
-  description: "Web Engineer @ McDonald's",
+  description: "Senior Engineer | Vercel",
   links: [
     {
       name: "miguel.cab",
